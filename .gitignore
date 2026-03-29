@@ -1,0 +1,25 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment
+.env
+.env.*
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribution
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -26,3 +26,22 @@ Goal -> Plan (vision + quality target)
 - This is a design/research repo — mostly docs, no runnable code yet
 - The concept is a meta-programmer that uses Claude Code as its execution engine
 - Each fix runs in an independent Claude Code session to avoid context contamination
+
+## Shared Knowledge Base — agent-kb
+
+Before starting work, check [Canlah-AI/agent-kb](https://github.com/Canlah-AI/agent-kb) — shared memory for all Canlah AI agents:
+- `decisions/` — architectural rationale
+- `patterns/` — reusable how-to
+- `lessons/` — known gotchas — scan before debugging
+- `products/` — living product docs (including `products/AMAZON_SUITE.md`)
+- `runbooks/` — incident playbooks
+- `apis/` — external API quirks
+
+**Read without cloning:**
+```bash
+gh api repos/Canlah-AI/agent-kb/contents/<path> --jq .content | base64 -d
+```
+
+**Read when:** starting any task here, designing a new feature, hitting non-obvious bugs.
+
+**Write when:** you learn something non-obvious — drop a lesson in `lessons/YYYY-MM-DD_<slug>.md` (<200 lines), commit to agent-kb main directly.
